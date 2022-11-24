@@ -120,8 +120,12 @@ const Chat = (props) => {
             </div>
 
                 {console.log(props.data)}
+                {props.data.length > 0 
+                ?
                 <div className=' w-full'>{data.reverse()}</div>
-
+                :
+                <div className=' text-white'>loading...</div>
+                }
         </div>
         </>
     );
