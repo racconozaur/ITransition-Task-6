@@ -38,7 +38,7 @@ const Chat = (props) => {
         
     }
 
-    const data = props.data.reverse().map(e => {
+    const data = props.data.map(e => {
         if(e.rciever == sender){
             return (
                 <Message
@@ -120,7 +120,7 @@ const Chat = (props) => {
             </div>
 
                 {console.log(props.data)}
-                <div className=' w-full'>{data}</div>
+                <div className=' w-full'>{data.reverse()}</div>
 
         </div>
         </>
